@@ -1,28 +1,23 @@
 import React from "react";
-import logo from "./logo.svg";
 // import "./App.css";
+import Button from "@material-ui/core/Button";
+import { Container } from "@material-ui/core";
 
 function App() {
   return (
-    <container>
+    <Container maxWidth="sm">
       <div className="App">
-        <header className="App-header">
-          <h1>hello world</h1>
-          {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-        </header>
+        {/* <header className="App-header">
+         <h1 className="center-align">Google Books Search</h1>
+      </header> */}
+        <div>
+          <h2>hola mundo!</h2>
+          <Button variant="contained" color="secondary">
+            Hello World
+          </Button>
+        </div>
       </div>
-    </container>
+    </Container>
   );
 }
 
