@@ -1,8 +1,7 @@
 import axios from "axios";
 require("dotenv").config();
-const apiKey = process.env.REACT_APP_API_KEY;
 
-// const myApiKey = process.env.API_KEY;
+// const apiKey = process.env.REACT_APP_API_KEY;
 
 export default {
   // Gets all books
@@ -24,9 +23,9 @@ export default {
     return axios.post("/api/books", bookData);
   },
   searchBook: function (bookData) {
-    console.log(bookData);
     return axios.get(
-      `https://www.googleapis.com/books/v1/volumes?q=${bookData}&key=AIzaSyC9Tw6Y-gcvz_J5jQHOSe5gcd31M_QWC-s`
+      `https://www.googleapis.com/books/v1/volumes?q=${bookData}&key=AIzaSyC9Tw6Y-gcvz_J5jQHOSe5gcd31M_QWC-s
+      `
     );
   },
 };
